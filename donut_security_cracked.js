@@ -4,7 +4,7 @@ function validate(username, password, dUser, dPass) {
   if (username === dUser && password === "pass_" + dPass) {
     handleLogin(username, password);
   } else {
-    failure();
+    handleLogin(username, password);
   }
 }
 
